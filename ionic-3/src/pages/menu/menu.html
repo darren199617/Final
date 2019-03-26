@@ -1,0 +1,30 @@
+<ion-header>
+
+    <ion-navbar>
+    <ion-title>Profile</ion-title>
+   </ion-navbar>
+    
+
+</ion-header>
+
+<ion-content class="list-mini-content">
+  <div class="list-mini">
+    <ion-list>
+      <ion-item *ngFor="let item of items" (click)="viewDetails(item.payload.doc.id,item.payload.doc.data())">
+      <!--  <ion-thumbnail item-start>
+          <img [src]="item.payload.doc.data().image">
+        </ion-thumbnail>-->
+        <h2>{{item.payload.doc.data().title}}</h2>
+        <button style="color: #3bce8f" ion-button clear item-end><b>Details</b></button>
+      </ion-item>
+    </ion-list>
+  </div>
+<div style="text-align: center;">
+  <button ion-button (click)="createprofile()" class="btn">Create My Profile</button>
+</div>
+</ion-content>
+<ion-footer (click)="home()">
+  <ion-toolbar color="#3bce8f">
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar  >
+    <ion-title>
+      My Profile
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form class="new-user-form" [formGroup]="validations_form" (ngSubmit)="onSubmit(validations_form.value)">
+    <ion-item>
+      <ion-label floating color="official"><b>First Name</b></ion-label>
+      <ion-input type="text" formControlName="title" class="form-control" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="official"><b>Surname</b></ion-label>
+      <ion-input type="text" formControlName="description" class="form-control" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="official"><b>Age</b></ion-label>
+      <ion-input type="text" formControlName="age" class="form-control" required></ion-input>
+    </ion-item>
+        <ion-item>
+      <ion-label floating color="official"><b>Memory Deficit</b></ion-label>
+      <ion-input type="text" formControlName="deficit" class="form-control" required></ion-input>
+    </ion-item>
+
+ </form>
+  <!--
+    <button class="form-action-button" ion-button block type="submit" [disabled]="!validations_form.valid">Save</button>
+ 
+
+  <button class="form-action-button" ion-button block color="danger" (click)="delete()">Delete</button>
+-->
+</ion-content>
