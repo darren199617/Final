@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { ScoresPage } from '../scores/scores';
 import { ToastController,  LoadingController,ViewController } from 'ionic-angular';
 import { TechniquesPage } from '../techniques/techniques';
 import { FirebaseService } from '../services/firebase.service';
@@ -59,6 +60,13 @@ if(this.show == true){
   this.show = true;
   }
 }
+
+scores(){
+
+          this.navCtrl.push(ScoresPage); 
+  }
+
+
 
 show_input1() {
   //this.show = true;

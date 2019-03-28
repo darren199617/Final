@@ -80,6 +80,7 @@
   </div>
  <div class="names">
   <p>Look at the following pictures and the names below. Try to remember the name of each person. When you're ready, hide the names and enter the correct name below each picture</p></div>
+<div class="names">
 <ion-grid>
   <ion-row>
     <ion-col>
@@ -89,12 +90,12 @@
        <ion-img src="../assets/imgs/person5a.jpg" ></ion-img>
     </ion-col>
     <ion-col>
-       <ion-img src="../assets/imgs/person3b.jpg"></ion-img>
+       <ion-img src="../assets/imgs/person6a.jpg"></ion-img>
     </ion-col>
 
   </ion-row>
 </ion-grid>
-
+</div>
 
 
 <div class="names">
@@ -136,7 +137,7 @@
 
 
 <h3 padding-top>C</h3>
-<ion-img src="../assets/imgs/person3b.jpg" ></ion-img>
+<ion-img src="../assets/imgs/person6a.jpg" ></ion-img>
 <div padding-bottom>
 <ion-item>
 <ion-input text-center placeholder="Enter Name" [(ngModel)]="enteredName3"></ion-input>
@@ -153,7 +154,9 @@
 <h4> Click Reset to start again</h4>
 
 <button ion-button (click)="resetVal()" class="btn">Reset</button>
-
+<div>
+<button ion-button (click)="scores()" class="btn" id="scores">Scores</button>
+</div>
 <p class="heading" ><b>__________________________</b></p>
 
 </div>

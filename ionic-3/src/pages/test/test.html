@@ -80,6 +80,7 @@
   </div>
  <div class="names">
   <p>Look at the following pictures and the names below. Try to remember the name of each person. When you're ready, hide the names and enter the correct name below each picture</p></div>
+<div class="names">
 <ion-grid>
   <ion-row>
     <ion-col>
@@ -94,7 +95,7 @@
 
   </ion-row>
 </ion-grid>
-
+</div>
 
 
 <div class="names">
@@ -161,6 +162,9 @@
 
 <button class="form-action-button" ion-button block type="submit" [disabled]="!validations_form.valid">Save</button>
 -->
+<div>
+<button ion-button (click)="scores()" class="btn" id="scores">Scores</button>
+</div>
 <p class="heading" ><b>__________________________</b></p>
 
 </div>

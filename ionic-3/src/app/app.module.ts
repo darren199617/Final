@@ -17,7 +17,8 @@ import { TechniquesPage } from '../pages/techniques/techniques';
 import { InformationPage } from '../pages/information/information';
 import { TipsPage } from '../pages/tips/tips';
 import { QuizPage } from '../pages/quiz/quiz';
-
+import { ScoresPage } from '../pages/scores/scores';
+import { AboutPage } from '../pages/about/about';
 
 
 import { ImagePicker } from '@ionic-native/image-picker';
@@ -45,7 +46,9 @@ import { environment } from '../environment/environment';
     TipsPage,
     QuizPage,
     TechniquesPage,
-    InformationPage
+    InformationPage,
+    ScoresPage,
+    AboutPage,
 
   ],
   imports: [
@@ -70,7 +73,9 @@ import { environment } from '../environment/environment';
     TipsPage,
     QuizPage,
     TechniquesPage,
-    InformationPage
+    InformationPage,
+    ScoresPage,
+    AboutPage
   ],
   providers: [
     StatusBar,

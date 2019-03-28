@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
 import { TechniquesPage } from '../techniques/techniques';
+import { ScoresPage } from '../scores/scores';
+
 
 /**
  * Generated class for the Test2Page page.
@@ -39,6 +41,11 @@ NumberTechniques()
   {
     this.navCtrl.push(TechniquesPage); 
      }
+ 
+scores(){
+
+          this.navCtrl.push(ScoresPage); 
+  }
  
 show_input() {
   //this.show = true;

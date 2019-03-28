@@ -28014,6 +28014,10 @@ page-information .btn {
   background-color: #3bce8f;
 }
 
+page-information .memtype {
+  font-size: 14px;
+}
+
 page-login .error-message {
   color: #bf3e3e;
 }

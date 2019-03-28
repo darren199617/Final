@@ -12,6 +12,7 @@ import { InformationPage } from '../information/information';
 import { TipsPage } from '../tips/tips';
 import { MenuPage } from '../menu/menu';
 import { QuizPage } from '../quiz/quiz';
+import { AboutPage } from '../about/about';
 
 /**
  * Generated class for the HomePage page.
@@ -69,6 +70,11 @@ test2(){
 menu(){
 
         	this.navCtrl.push(MenuPage); 
+  }
+
+  about(){
+
+          this.navCtrl.push(AboutPage); 
   }
 
   details(){
